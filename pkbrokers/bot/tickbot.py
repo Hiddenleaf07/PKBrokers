@@ -889,7 +889,6 @@ class PKTickBot:
                 for symbol, data in list(ticks_data.items())[:100]:
                     candle_summary["data"][symbol] = {
                         "available": True,
-                        "last_update": data.get("last_update", "N/A")
                     }
                 
                 # Create compressed file
